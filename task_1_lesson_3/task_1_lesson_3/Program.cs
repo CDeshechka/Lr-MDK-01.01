@@ -34,7 +34,16 @@ namespace task_1_lesson_3
                     }
                 }
                 if (Duplicates) break;
+
             }
+            //Выводим результат
+            if (Duplicates)
+                Console.WriteLine("В введенном массиве присутствуют одинаковые элементы");
+            else
+                Console.WriteLine("Все элементы массива различнв");
+
+            Console.WriteLine();
+
         }
     }
 }
