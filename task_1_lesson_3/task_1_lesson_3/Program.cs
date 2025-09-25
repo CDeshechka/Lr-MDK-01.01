@@ -14,6 +14,13 @@ namespace task_1_lesson_3
             Console.Write("Введите числа, содержащиеся в массиве через пробел: ");
             string input = Console.ReadLine();
             Console.WriteLine();
+            //Преобразовываем числа в массив
+            string[] parts = input.Split(' ');
+            int[] numbers = new int[parts.Length];
+            for (int i = 0; i < parts.Length; i++)
+            {
+                numbers[i] = int.Parse(parts[i]);
+            }
         }
     }
 }
