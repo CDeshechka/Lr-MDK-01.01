@@ -20,6 +20,11 @@ namespace task_2_lesson_3
             }
             //Создаем массив для хранения сумм пар соседних чисел
             int[] sums = new int[1999];
+            //Вычисляем суммы пар четных чисел
+            for (int i = 0, j = 0; i < 3998; i += 2, j++)
+            {
+                sums[j] = numbers[i] + numbers[i + 1];
+            }
         }
 
     }
