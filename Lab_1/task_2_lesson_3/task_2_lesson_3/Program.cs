@@ -13,7 +13,12 @@ namespace task_2_lesson_3
             //Создаем массив
             int[] numbers = new int[4000];
             Random random = new Random();
-           
+            //Заполняем массив случайными числами 
+            for (int i = 0; i < 4000; i++)
+            {
+                numbers[i] = random.Next(1, 5000);
+            }
+          
         }
 
     }
