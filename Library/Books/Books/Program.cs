@@ -71,4 +71,23 @@ public class SimpleLibrary
         Console.WriteLine($"Книга '{newTitle}' добавлена под номером {nextNumber}.");
         nextNumber++;
     }
+
+    private void ShowBooks()
+    {
+        Console.WriteLine("--- Список книг ---");
+
+        if (bookTitles.Count == 0)
+        {
+            Console.WriteLine("Книг пока нет.");
+            return;
+        }
+
+
+        for (int i = 0; i < bookTitles.Count; i++)
+        {
+
+
+            Console.WriteLine($"Номер: {bookNumbers[i]} | Название: {bookTitles[i]}");
+        }
+    }
 }
