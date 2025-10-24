@@ -21,7 +21,22 @@ namespace task_1_lesson_3
             {
                 numbers[i] = int.Parse(parts[i]);
             }
-           
+            //Проверяем наличие однинаковых элементов
+            bool Duplicates = false;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                for (int j = i + 1; j < numbers.Length; j++)
+                {
+                    if (numbers[i] == numbers[j])
+                    {
+                        Duplicates = true;
+                        break;
+                    }
+                }
+                if (Duplicates) break;
+
+            }
+            
 
         }
     }
