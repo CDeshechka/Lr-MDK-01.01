@@ -25,7 +25,15 @@ namespace task_2_lesson_3
             {
                 sums[j] = numbers[i] + numbers[i + 1];
             }
-           
+            //Выводим результат
+            Console.Write("[");
+            for (int i = 0; i < sums.Length; i++)
+            {
+                Console.Write(sums[i]);
+                if (i < sums.Length - 1)
+                    Console.Write(", ");
+            }
+            Console.WriteLine("]");
         }
 
     }
