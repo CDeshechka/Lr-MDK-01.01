@@ -18,6 +18,8 @@ namespace task_2_lesson_3
             {
                 numbers[i] = random.Next(1, 5000);
             }
+            //Создаем массив для хранения сумм пар соседних чисел
+            int[] sums = new int[1999];
           
         }
 
